@@ -37,7 +37,7 @@ public class Knife_movement : MonoBehaviour
             this.rb.isKinematic = true;
             print("venceu");
             GameManager.instance.coins *= other.GetComponent<End_wall>().bonus;
-            GameManager.instance.Activate_fx();
+            
             StartCoroutine(win());
         }
 
